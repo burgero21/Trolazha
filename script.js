@@ -17,8 +17,11 @@ function reshi() {
     para.appendChild(node);
     const element = document.getElementById("div1");
     element.appendChild(para);
-    console.log(lugje.length);
+    if (choek.toLowerCase == "petar"){
+       lugje.splice(randomIndex, 1)
+    }
+    else{
     lugje.splice(randomIndex, 1);
-    brojac = brojac + 1;
+    brojac = brojac + 1;}
   }
 }
