@@ -14,7 +14,6 @@ function reshi() {
     const choek = lugje[randomIndex];
     const para = document.createElement("p");
     const node = document.createTextNode(brojac + "." + " " + choek);
-    para.appendChild(node);
     const element = document.getElementById("div1");
     element.appendChild(para);
     if (choek.toLowerCase == "petar"){
@@ -22,6 +21,8 @@ function reshi() {
     }
     else{
     lugje.splice(randomIndex, 1);
-    brojac = brojac + 1;}
+    brojac = brojac + 1;
+    para.appendChild(node)
+}
   }
 }
