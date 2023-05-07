@@ -12,17 +12,17 @@ function reshi() {
   while (lugje.length != 0) {
     const randomIndex = Math.floor(Math.random() * lugje.length);
     const choek = lugje[randomIndex];
-    const para = document.createElement("p");
-    const node = document.createTextNode(brojac + "." + " " + choek);
-    const element = document.getElementById("div1");
-    element.appendChild(para);
     if (choek.toLowerCase == "petar"){
        lugje.splice(randomIndex, 1)
     }
     else{
+    const para = document.createElement("p");
+    const node = document.createTextNode(brojac + "." + " " + choek);
+    const element = document.getElementById("div1");
+    element.appendChild(para);
     lugje.splice(randomIndex, 1);
     brojac = brojac + 1;
     para.appendChild(node)
-}
+   }
   }
 }
