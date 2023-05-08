@@ -7,6 +7,16 @@ function dodaj() {
   choekreset.value = " ";
 }
 
+function troll() {
+  if (Math.floor(Math.random() * 11) == 1) {
+    const myImage = new Image(500, 600);
+    myImage.src =
+      "https://cdn.discordapp.com/attachments/726092997468618898/1105153000579792936/IMG_20230502_021945_425.jpg";
+    document.body.appendChild(myImage);
+    console.log(1);
+  }
+}
+
 function reshi() {
   brojac = 1;
   while (lugje.length != 0) {
@@ -35,3 +45,4 @@ function reshi() {
     para.appendChild(node);
   }
 }
+
